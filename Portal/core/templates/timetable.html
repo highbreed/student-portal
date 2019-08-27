@@ -1,0 +1,624 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+<div id="navigation" role="navigation">
+ <ul id="navigation-primary" class="ult-section primary">   <li class="ult-position">  <a href="{% url 'core:home_page' %}"  class="first">Home</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:info_update' %}" >Information Update</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:fees_page' %}" >Fees</a>
+ </li>  <li class="ult-position active">  <a href="{% url 'core:timetable' %}" >Timetables</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:course' %}" >Course Registration</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:results' %}" >Results</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:requests' %}" >My Requests</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:logout_page' %}" >Sign Out</a>
+ </li>
+</ul><!-- end: .primary -->
+  <ul id="navigation-secondary" class="ult-section secondary">   <li class="ult-position  active">  <a href="password_update.php"  class="first">Change Password</a>
+ </li>  <li class="ult-position ">  <a href="student_clearance.php" >Student Clearance</a>
+ </li>  <li class="ult-position ">  <a href="https://sites.google.com/a/mku.ac.ke/students/" >Downloads</a>
+ </li>  <li class="ult-position ">  <a href="http://distance.mku.ac.ke/portal/" target="_blank" > E-Learning Portal </a>
+ </li>  <li class="ult-position ">  <a href="https://ibank.gtbank.co.ke/newapps/gtcollectportal/index.aspx" target="_blank" > MPesa Trans. Validation </a>
+ </li>  <li class="ult-position ">  <a href="http://studentemailreg.mku.ac.ke/" target="_blank" > Students Email </a>
+ </li>
+ </ul><!-- end: .secondary -->
+ </div><!-- end: #navigation -->
+{% endblock %}
+{% block content %}
+<div id="left">
+	<div class="left_articles">
+	<div> <p>BIT/53642/2016 KAINGU STEPHEN TUMAINI  &nbsp;  &nbsp;  &nbsp;  &nbsp; Thika (Day) , Main Campus (Thika)</p></div><p class="center">
+<table border="0" align="center" cellspacing="0" cellpadding="0">
+<FORM action="" name="studentTeachingTimetable" enctype="multipart/form-data" method="post">
+<tr><td align="center"> Course Code:<INPUT type="text" name="courseCode1" size="8" value=""> or <INPUT type="text" name="courseCode2" size="8" value=""> or <INPUT type="text" name="courseCode3" size="8" value=""><input type="submit" name="classTimetableBtn" class="inputbutton" value="Show Timetable for Selected Courses">  <BR>  Type at least the first two letters of the course code in the fields provided above <BR>  eg CSO3 to show all level 3 courses starting with CSO3 <BR>  leaving the fields blank will <input type="submit" name="programmeTimetable2" class="inputbutton" value="show all courses">  </td> </tr>
+</FORM></table>
+</p><p class="center">
+<table border="0" align="center" cellspacing="0" cellpadding="0">
+<FORM action="" name="studentClassTimetable" enctype="multipart/form-data" method="post">
+<tr><td align="center"> BIT Bachelor of Science in Information Technology</td> </tr>
+<tr><td align="center"> 2018/2019  (May/Aug) : May 1st 2019 - Aug 30th 2019</td> </tr>
+<tr><td align="center">
+<table border="1" align="center" cellspacing="0" cellpadding="0">
+<tr> <td align="center" colspan="9">WEEKLY </td> </tr>
+<tr> <td align="left" colspan="9">Saturday  </td> </tr>
+<tr align="center"> <td > &nbsp; </td>  <td > Code </td> <td > Course Title </td> <td > From </td> <td > To </td> <td > Venue </td> <td > Group </td>  <td > Lecturer</td>  <td > Exam Date </td> </tr>
+<tr align="left"> <td > 1 </td>
+<td > ABCU001 </td>
+<td > Research Methodology &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Dr. GIKANDI &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 2 </td>
+<td > ABCU002 </td>
+<td > Research Project &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. BENADINE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 3 </td>
+<td > BAF1101 </td>
+<td > Financial Accounting I &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. KABECA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 4 </td>
+<td > BBM1101 </td>
+<td > Introduction to business studies &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. NJIHIA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 5 </td>
+<td > BBM1201 </td>
+<td > Principles of Management &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. KANG'ETHE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 6 </td>
+<td > BBM1202 </td>
+<td > Principles of Marketing &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. NYOKABI &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 7 </td>
+<td > BBM2103 </td>
+<td > Organization Behavior &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. KANG'ETHE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 8 </td>
+<td > BEG2112 </td>
+<td > Digital Electronics and Devices &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. KUURA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 9 </td>
+<td > BIT1101 </td>
+<td > Computer Architecture &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. MUTISYA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 10 </td>
+<td > BIT1102 </td>
+<td > Introduction to programming and algorithms &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. MAINA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 11 </td>
+<td > BIT1106 </td>
+<td > Introduction to Computer Application Packages &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. KIARIE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 12 </td>
+<td > BIT1201 </td>
+<td > Database systems &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. MUTISYA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 13 </td>
+<td > BIT1202 </td>
+<td > Introduction to Web Design &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. TSINALE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 14 </td>
+<td > BIT1208 </td>
+<td > Structured Programming &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. OSANO &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 15 </td>
+<td > BIT2102 </td>
+<td > Fundamentals of Internet &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. MUIRURI &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 16 </td>
+<td > BIT2103 </td>
+<td > Hardware and software installation and support &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. KIARIE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 17 </td>
+<td > BIT2104 </td>
+<td > Operating Systems &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. TSINALE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 18 </td>
+<td > BIT2201 </td>
+<td > Computer Programming Methodology &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. TSINALE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 19 </td>
+<td > BIT2203 </td>
+<td > Data Structure and Algorithms &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. OWINO &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 20 </td>
+<td > BIT2204 </td>
+<td > Data Communication and Networks &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. KIARIE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 21 </td>
+<td > BIT2205 </td>
+<td > Object oriented programming II &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. TSINALE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 22 </td>
+<td > BIT2206 </td>
+<td > Systems analysis and design &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. NDINDA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 23 </td>
+<td > BIT3101 </td>
+<td > Software Engineering &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. MUGURE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 24 </td>
+<td > BIT3102 </td>
+<td > Event Driven Programming &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. BITTOK &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 25 </td>
+<td > BIT3106 </td>
+<td > Object Oriented Programming &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. TSINALE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 26 </td>
+<td > BIT3107 </td>
+<td > Database systems II &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. NJOROGE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 27 </td>
+<td > BIT3201 </td>
+<td > Object Oriented Analysis and Design &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. OSANO &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 28 </td>
+<td > BIT3202 </td>
+<td > Internet programming &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. NJOROGE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 29 </td>
+<td > BIT3204 </td>
+<td > Network Management &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. MUNENE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 30 </td>
+<td > BIT3205 </td>
+<td > Business systems simulation and modeling &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. MOSE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 31 </td>
+<td > BIT3206 </td>
+<td > ICT project management &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. KIARIE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 32 </td>
+<td > BIT3208 </td>
+<td > Advanced Web Design, Development and Management &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. MUTISYA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 33 </td>
+<td > BIT3209 </td>
+<td > Design and analysis of algorithm &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Prof. WANYEMBI &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 34 </td>
+<td > BIT3221 </td>
+<td > Network Operating Systems &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. TSINALE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 35 </td>
+<td > BIT4101 </td>
+<td > Business Data Mining and Warehousing &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. IRUNGU &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 36 </td>
+<td > BIT4102 </td>
+<td > Computer Graphics &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. OKAL &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 37 </td>
+<td > BIT4103 </td>
+<td > Human Computer Interaction &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Dr. GIKANDI &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 38 </td>
+<td > BIT4104 </td>
+<td > Security and Cryptography &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. MUIRURI &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 39 </td>
+<td > BIT4105 </td>
+<td > Advanced Data Structures and Computer Algorithms &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. MOSE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 40 </td>
+<td > BIT4106 </td>
+<td > Fuzzy Pattern Recognition and Neural Networks &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. MOSE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 41 </td>
+<td > BIT4107 </td>
+<td > Mobile Applications Development &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. OWINO &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 42 </td>
+<td > BIT4108 </td>
+<td > Information Systems Audit &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. MAINA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 43 </td>
+<td > BIT4201 </td>
+<td > Mobile Computing I &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. NJOROGE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 44 </td>
+<td > BIT4202 </td>
+<td > Artificial Intelligence &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. OKAL &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 45 </td>
+<td > BIT4203 </td>
+<td > Distributed Multimedia Systems &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. NDINDA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 46 </td>
+<td > BIT4204 </td>
+<td > E - Commerce &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. NDINDA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 47 </td>
+<td > BIT4205 </td>
+<td > Network Programming &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. OWINO &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 48 </td>
+<td > BIT4206 </td>
+<td > ICT In Business and Society &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. NDINDA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 49 </td>
+<td > BIT4209 </td>
+<td > Distributed Systems &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. TSINALE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 50 </td>
+<td > BIT4217 </td>
+<td > Total Quality Management for Information Technology &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. MUNENE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 51 </td>
+<td > BMA1104 </td>
+<td > Probability and Statistics I &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. KABUE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 52 </td>
+<td > BMA1106 </td>
+<td > Foundation mathematics &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. MWANGI &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 53 </td>
+<td > BMA1202 </td>
+<td > Discrete Mathematics &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. CHEGE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 54 </td>
+<td > BMA2102 </td>
+<td > Probability and statistics II &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. KABUE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 55 </td>
+<td > BMA3102 </td>
+<td > Business statistics II &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. MURIITHI &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 56 </td>
+<td > BMA3201 </td>
+<td > Operation research I &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. CHEGE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 57 </td>
+<td > BPY1101 </td>
+<td > Basic Electricity and Optics &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. KIMITI &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 58 </td>
+<td > BUCU001 </td>
+<td > Communication Skills &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. NABEA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 59 </td>
+<td > BUCU003 </td>
+<td > Development Studies &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Ms. NJOROGE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 60 </td>
+<td > BUCU004 </td>
+<td > Entrepreneurship &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. GACUIRI &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 61 </td>
+<td > BUCU005 </td>
+<td > HIV/ AIDS and Drug Abuse &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. MATAGARO &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 62 </td>
+<td > BIT2117 </td>
+<td > Accounting Information System &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. NDINDA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 63 </td>
+<td > BIT3105 </td>
+<td > Management Information Systems &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mr. MUTISYA &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+<tr align="left"> <td > 64 </td>
+<td > BIT3224 </td>
+<td > Computing Projects Development Approaches &nbsp;</td>
+<td > 07:00&nbsp; </td>
+<td > 08:00&nbsp; </td>
+<td nowrap> 1 &nbsp;</td>
+<td nowrap> Class I &nbsp;</td>
+<td nowrap> Mrs. MUGURE &nbsp; </td>
+<td nowrap>   &nbsp;</td> </tr>
+</table>
+</td> </tr>
+</FORM></table>
+</p>	</div>
+</div>
+{% endblock %}

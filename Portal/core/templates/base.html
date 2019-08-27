@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="author" content="Mount Kenya University" />
+	<meta name="description" content="Student Management Information System" />
+	<meta name="keywords" content="key, words" />
+	<link rel="shortcut icon" href="https://studentportal.mku.ac.ke/umis/studentportal/images/smisicon.ico" type="image/x-icon" />
+    <link rel="stylesheet", href="https://studentportal.mku.ac.ke/umis/studentportal/styles/main.css"/>
+	<title>Mount Kenya University : Students Online Portal</title>
+</head>
+<body >
+	<div id="content">
+		<div id="top_info">
+
+<table border="0" align="center" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+  <td align="left" width="1%">
+<a href="#" title="Mount Kenya University Home">
+ <img src="https://studentportal.mku.ac.ke/umis/studentportal/images/logoMKU.jpg" class="logoimg"/></a>
+ </td>
+ <td align="left">
+<table border="0" align="left" cellspacing="0" cellpadding="0" >
+<tr>
+ <td align="left">
+<h1>
+<a href="{% url 'core:home_page' %}" title="Mount Kenya University Home Page">
+Mount Kenya University </a>
+ </h1> </td>
+  </tr>
+<tr>
+ <td align="left">
+Unlocking Infinite Possibilities
+  </td>
+  </tr>
+</table>
+  </td>
+  </tr>
+</table>
+		</div>
+        {% block nav %}
+        {% endblock %}
+        {% block content %}
+        {% endblock %}
+		<div id="footer" >
+			<p class="right">&copy; 2019 <a href="">
+			Mount Kenya University</a> . Hosted by
+			<a href="http://www.mwanafunzi.net" title="Fountain ICT Services">Fountain ICT Services
+			</a></p>
+			<p><a href="">About Us</a> &middot; </p>
+		</div>
+	  </div>
+</body>
+</html>

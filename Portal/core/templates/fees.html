@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+<div id="navigation" role="navigation">
+ <ul id="navigation-primary" class="ult-section primary">   <li class="ult-position">  <a href="{% url 'core:home_page' %}"  class="first">Home</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:info_update' %}" >Information Update</a>
+ </li>  <li class="ult-position active">  <a href="{% url 'core:fees_page' %}" >Fees</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:timetable' %}" >Timetables</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:course' %}" >Course Registration</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:results' %}" >Results</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:requests' %}" >My Requests</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:logout_page' %}" >Sign Out</a>
+ </li>
+</ul><!-- end: .primary -->
+  <ul id="navigation-secondary" class="ult-section secondary">   <li class="ult-position  active">  <a href="password_update.php"  class="first">Change Password</a>
+ </li>  <li class="ult-position ">  <a href="student_clearance.php" >Student Clearance</a>
+ </li>  <li class="ult-position ">  <a href="https://sites.google.com/a/mku.ac.ke/students/" >Downloads</a>
+ </li>  <li class="ult-position ">  <a href="http://distance.mku.ac.ke/portal/" target="_blank" > E-Learning Portal </a>
+ </li>  <li class="ult-position ">  <a href="https://ibank.gtbank.co.ke/newapps/gtcollectportal/index.aspx" target="_blank" > MPesa Trans. Validation </a>
+ </li>  <li class="ult-position ">  <a href="http://studentemailreg.mku.ac.ke/" target="_blank" > Students Email </a>
+ </li>
+ </ul><!-- end: .secondary -->
+ </div><!-- end: #navigation -->
+{% endblock %}
+
+{% block content %}
+<div id="left">
+	<div class="left_articles">
+	<div> <p>BIT/53642/2016 KAINGU STEPHEN TUMAINI  &nbsp;  &nbsp;  &nbsp;  &nbsp; Thika (Day) , Main Campus (Thika)</p></div><table border="0" align="center" cellspacing="0" cellpadding="0" ><tr> <td colspan="6" align="center" ><h2>  Online   Fees Statement  </h2></td></tr> <tr align="center"> <td colspan="6"><table border="1" align="center" cellspacing="0" cellpadding="0" ><tr> <td colspan="6" align="left"><b> Currency : </b>KSHS (KShs)</td></tr><tr> <td colspan="6" align="left"><b> Academic Year : </b>2016/2017</td></tr><tr align="center"><td nowrap><b> Transaction/ Receipt Number</b> </td>
+<td nowrap><b> Date       </b> </td>
+<td nowrap><b> Description </b> </td>
+<td nowrap><b> Debits DR  </b> </td>
+<td nowrap><b> Credits CR </b> </td>
+<td nowrap><b> Balance    </b> </td>
+</tr> <tr><td align="left" nowrap> &nbsp;1609051141205 </td>
+<td align="left" nowrap> &nbsp;05-SEP-2016 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 57,550.00 </td>
+<td align="right" nowrap> &nbsp; -57,550.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1701030848362 </td>
+<td align="left" nowrap> &nbsp;03-JAN-2017 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 18,000.00 </td>
+<td align="right" nowrap> &nbsp; -75,550.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp; 8501030848362 </td>
+<td align="left" nowrap> &nbsp;03-JUN-2017 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 20,550.00 </td>
+<td align="right" nowrap> &nbsp; -75,550.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1712091051382 </td>
+<td align="left" nowrap> &nbsp;09-Aug-2017 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 7,000.00 </td>
+<td align="right" nowrap> &nbsp; -82,550.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1712091051382 </td>
+<td align="left" nowrap> &nbsp;09-DEC-2017 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 45,550.00 </td>
+<td align="right" nowrap> &nbsp; -82,550.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;2016/2017-Jan/Apr Fees </td>
+<td align="left" nowrap> &nbsp;02-MAR-2017 </td>
+<td align="left" nowrap> &nbsp;Fees Payable </td>
+<td align="right" nowrap> &nbsp; 45,550.00 </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 00.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;2016/2017-May/Aug Fees </td>
+<td align="left" nowrap> &nbsp;12-MAY-2016 </td>
+<td align="left" nowrap> &nbsp;Fees Payable </td>
+<td align="right" nowrap> &nbsp; 45,550.00 </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 00.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;2016/2017-Sep/Dec Fees </td>
+<td align="left" nowrap> &nbsp;12-DEC-2016 </td>
+<td align="left" nowrap> &nbsp;Fees Payable </td>
+<td align="right" nowrap> &nbsp; 57,550.00 </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 00.00  </td>
+</tr>
+<tr align="right" ><td  colspan="3"> <b> Academic Year Totals : &nbsp; &nbsp; &nbsp; </b></td><td align="right" nowrap> &nbsp;<b> 148,650.00</b> </td>
+<td align="right" nowrap> &nbsp;<b> 148,650.00</b> </td>
+<td align="right" nowrap> &nbsp;<b> 00.00</b></td>
+</tr> <tr> <td  colspan="6" >&nbsp;</td></tr><tr> <td colspan="6" align="left"><b> Academic Year : </b>2017/2018</td></tr><tr align="center"><td nowrap><b> Transaction/ Receipt Number</b> </td>
+<td nowrap><b> Date       </b> </td>
+<td nowrap><b> Description </b> </td>
+<td nowrap><b> Debits DR  </b> </td>
+<td nowrap><b> Credits CR </b> </td>
+<td nowrap><b> Balance    </b> </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1802081039091 </td>
+<td align="left" nowrap> &nbsp;08-FEB-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 30,000.00 </td>
+<td align="right" nowrap> &nbsp; 9,450.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1806301088407 </td>
+<td align="left" nowrap> &nbsp;30-JUN-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 20,000.00 </td>
+<td align="right" nowrap> &nbsp; 29,450.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1807101198418 </td>
+<td align="left" nowrap> &nbsp;10-JUL-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 18,000.00 </td>
+<td align="right" nowrap> &nbsp; 47,450.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1808091658904 </td>
+<td align="left" nowrap> &nbsp;09-AUG-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 7,000.00 </td>
+<td align="right" nowrap> &nbsp; 54,450.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1808101661017 </td>
+<td align="left" nowrap> &nbsp;10-AUG-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 3,000.00 </td>
+<td align="right" nowrap> &nbsp; 00.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1808795661017 </td>
+<td align="left" nowrap> &nbsp;13-DEC-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 48,000.00 </td>
+<td align="right" nowrap> &nbsp; 10, 650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;2017/2018-Jan/Apr Fees </td>
+<td align="left" nowrap> &nbsp;30-JAN-2018 </td>
+<td align="left" nowrap> &nbsp;Fees Payable </td>
+<td align="right" nowrap> &nbsp; 45,550.00 </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 00.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;2017/2018-May/Aug Fees </td>
+<td align="left" nowrap> &nbsp;21-MAY-2018 </td>
+<td align="left" nowrap> &nbsp;Fees Payable </td>
+<td align="right" nowrap> &nbsp; 45,550.00 </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 00.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;2017/2018-Sep/Dec Fees </td>
+<td align="left" nowrap> &nbsp;21-Sep-2018 </td>
+<td align="left" nowrap> &nbsp;Fees Payable </td>
+<td align="right" nowrap> &nbsp; 45,550.00 </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 10,650.00  </td>
+</tr>
+<tr align="right" ><td  colspan="3"> <b> Academic Year Totals : &nbsp; &nbsp; &nbsp; </b></td><td align="right" nowrap> &nbsp;<b> 136,650.00</b> </td>
+<td align="right" nowrap> &nbsp;<b> 126,000.00</b> </td>
+<td align="right" nowrap> &nbsp;<b> 10,650.00</b></td>
+</tr> <tr> <td  colspan="6" >&nbsp;</td></tr><tr> <td colspan="6" align="left"><b> Academic Year : </b>2018/2019</td></tr><tr align="center"><td nowrap><b> Transaction/ Receipt Number</b> </td>
+<td nowrap><b> Date       </b> </td>
+<td nowrap><b> Description </b> </td>
+<td nowrap><b> Debits DR  </b> </td>
+<td nowrap><b> Credits CR </b> </td>
+<td nowrap><b> Balance    </b> </td>
+</tr>  <tr> <td align="center" colspan="3" nowrap>
+<b> Opening Balance </b> </td>
+<td align="right" nowrap> &nbsp; 10,650.00  </td>
+<td align="right" nowrap> &nbsp; 0.00 </td>
+<td align="right" nowrap> <b> 10,650.00</b> </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1809111793330 </td>
+<td align="left" nowrap> &nbsp;11-SEP-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 18,000.00 </td>
+<td align="right" nowrap> &nbsp; 15,650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1810031419517 </td>
+<td align="left" nowrap> &nbsp;03-OCT-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 10,000.00 </td>
+<td align="right" nowrap> &nbsp; 5,650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1810041820639 </td>
+<td align="left" nowrap> &nbsp;04-OCT-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 5,300.00 </td>
+<td align="right" nowrap> &nbsp; 350.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1810131126925 </td>
+<td align="left" nowrap> &nbsp;13-OCT-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 10,000.00 </td>
+<td align="right" nowrap> &nbsp; -9,650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1811011739635 </td>
+<td align="left" nowrap> &nbsp;01-NOV-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 10,000.00 </td>
+<td align="right" nowrap> &nbsp; -19,650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1811210859496 </td>
+<td align="left" nowrap> &nbsp;21-NOV-2018 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 8,000.00 </td>
+<td align="right" nowrap> &nbsp; -27,650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1901260927177 </td>
+<td align="left" nowrap> &nbsp;26-JAN-2019 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 18,000.00 </td>
+<td align="right" nowrap> &nbsp; -45,650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1903111567749 </td>
+<td align="left" nowrap> &nbsp;11-MAR-2019 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 20,000.00 </td>
+<td align="right" nowrap> &nbsp; -65,650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1903301286976 </td>
+<td align="left" nowrap> &nbsp;30-MAR-2019 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 5,000.00 </td>
+<td align="right" nowrap> &nbsp; -70,650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1904091113311 </td>
+<td align="left" nowrap> &nbsp;09-APR-2019 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 5,000.00 </td>
+<td align="right" nowrap> &nbsp; -75,650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1906141072454 </td>
+<td align="left" nowrap> &nbsp;14-JUN-2019 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 4,000.00 </td>
+<td align="right" nowrap> &nbsp; -79,650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;1907061288943 </td>
+<td align="left" nowrap> &nbsp;06-JUL-2019 </td>
+<td align="left" nowrap> &nbsp;Fee Payment </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 8,000.00 </td>
+<td align="right" nowrap> &nbsp; -87,650.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;2018/2019-Jan/Apr Fees </td>
+<td align="left" nowrap> &nbsp;30-JAN-2019 </td>
+<td align="left" nowrap> &nbsp;Fees Payable </td>
+<td align="right" nowrap> &nbsp; 45,550.00 </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; -42,100.00  </td>
+</tr>
+<tr><td align="left" nowrap> &nbsp;2018/2019-Sep/Dec Fees </td>
+<td align="left" nowrap> &nbsp;21-SEP-2018 </td>
+<td align="left" nowrap> &nbsp;Fees Payable </td>
+<td align="right" nowrap> &nbsp; 45,550.00 </td>
+<td align="right" nowrap> &nbsp;  </td>
+<td align="right" nowrap> &nbsp; 3,450.00  </td>
+</tr>
+ <tr align="right" ><td colspan="3"> <b> Academic Year Totals :&nbsp;&nbsp;&nbsp;</b></td><td align="right" nowrap> &nbsp;<b> 91,100.00</b> </td>
+<td align="right" nowrap> &nbsp;<b> 121,300.00</b> </td>
+<td align="right" nowrap> &nbsp;<b> 00.00</b></td>
+</tr> <tr align="right" ><td colspan="3"> <b> Grand Totals :&nbsp; &nbsp; &nbsp; </b></td><td align="right" nowrap> &nbsp;<b> 376,400.00</b> </td>
+<td align="right" nowrap> &nbsp;<b> 376,400.00</b> </td>
+<td align="right" nowrap> &nbsp;<b> 00.00</b></td>
+</tr><tr> <H1><td width="100%" align="left" colspan="6" nowrap>
+&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> Closing Balance :
+00.00</b> </td>
+</H1></tr>
+</table></td></tr></table>	</div>
+</div>
+{% endblock %}

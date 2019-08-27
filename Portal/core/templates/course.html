@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+
+{% block nav %}
+<div id="navigation" role="navigation">
+ <ul id="navigation-primary" class="ult-section primary">   <li class="ult-position">  <a href="{% url 'core:home_page' %}"  class="first">Home</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:info_update' %}" >Information Update</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:fees_page' %}" >Fees</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:timetable' %}" >Timetables</a>
+ </li>  <li class="ult-position active">  <a href="{% url 'core:course' %}" >Course Registration</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:results' %}" >Results</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:requests' %}" >My Requests</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:logout_page' %}" >Sign Out</a>
+ </li>
+</ul><!-- end: .primary -->
+  <ul id="navigation-secondary" class="ult-section secondary">   <li class="ult-position  active">  <a href="password_update.php"  class="first">Change Password</a>
+ </li>  <li class="ult-position ">  <a href="student_clearance.php" >Student Clearance</a>
+ </li>  <li class="ult-position ">  <a href="https://sites.google.com/a/mku.ac.ke/students/" >Downloads</a>
+ </li>  <li class="ult-position ">  <a href="http://distance.mku.ac.ke/portal/" target="_blank" > E-Learning Portal </a>
+ </li>  <li class="ult-position ">  <a href="https://ibank.gtbank.co.ke/newapps/gtcollectportal/index.aspx" target="_blank" > MPesa Trans. Validation </a>
+ </li>  <li class="ult-position ">  <a href="http://studentemailreg.mku.ac.ke/" target="_blank" > Students Email </a>
+ </li>
+ </ul><!-- end: .secondary -->
+ </div><!-- end: #navigation -->
+{% endblock %}
+
+{% block content %}
+<div id="left">
+	<div class="left_articles">
+	<div> <p>BIT/53642/2016 KAINGU STEPHEN TUMAINI  &nbsp;  &nbsp;  &nbsp;  &nbsp; Thika (Day) , Main Campus (Thika)</p></div><p class="center">
+<table border="0" align="center" cellspacing="0" cellpadding="0">
+<FORM action="/umis/studentportal/course_registration.php" name="registeredCourses" enctype="multipart/form-data" method="post">
+<tr><td align="center"> BIT Bachelor of Science in Information Technology</td> </tr>
+<tr><td align="center"> 2018/2019 May/Aug Semester<br /> <B><FONT color=red> Registration Deadline on 08-Jun-2019 </FONT> </B> </td> </tr>
+<tr><td align="center">
+<table border="1" align="center" cellspacing="0" cellpadding="0">
+<tr> <td align="center" colspan="8"> Registered Courses </td> </tr>
+ <tr align="center"> <td > &nbsp; </td>
+<td > Select  </td> <td > Code </td>  <td > Course Title </td> <td > Exam Type </td><td > Class/Group </td> <td > Status  </td> <td > Amount </td>   </tr>
+ <tr align="right">  <td class="dentry_label"  colspan="7"> <input type="hidden" name="semesterID" value="2018/2019BIT2MAY/AUGTHIKADAY413006" />
+ <INPUT type="hidden" name="regNo" value="BIT/53642/2016" id="regNo" />
+ <INPUT type="hidden" name="regCoursesCount"
+		    value="0" id="regCoursesCount" />
+   Tution Charges </td>
+ <td align="right">0</td>  </tr>
+ <tr align="right">  <td class="dentry_label"  colspan="7">   Administrative Charges : </td>
+ <td align="right">0</td>  </tr>
+ <tr align="right">  <td class="dentry_label"  colspan="7">  Grand Total </td>
+ <td align="right">0</td>  </tr>
+</table>
+</td> </tr>
+</FORM></table>
+ <B><FONT color=red> Sorry Course Registration closed.  <BR>Consult your Faculty/School/Institute for more Information.<BR></FONT> </B>
+</p>	</div>
+</div>
+{% endblock %}

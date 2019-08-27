@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+<div id="navigation" role="navigation">
+ <ul id="navigation-primary" class="ult-section primary">   <li class="ult-position">  <a href="{% url 'core:home_page' %}"  class="first">Home</a>
+ </li>  <li class="ult-position active">  <a href="{% url 'core:info_update' %}" >Information Update</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:fees_page' %}" >Fees</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:timetable' %}" >Timetables</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:course' %}" >Course Registration</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:results' %}" >Results</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:requests' %}" >My Requests</a>
+ </li>  <li class="ult-position ">  <a href="{% url 'core:logout_page' %}" >Sign Out</a>
+ </li>
+</ul><!-- end: .primary -->
+  <ul id="navigation-secondary" class="ult-section secondary">   <li class="ult-position  active">  <a href="password_update.php"  class="first">Change Password</a>
+ </li>  <li class="ult-position ">  <a href="student_clearance.php" >Student Clearance</a>
+ </li>  <li class="ult-position ">  <a href="https://sites.google.com/a/mku.ac.ke/students/" >Downloads</a>
+ </li>  <li class="ult-position ">  <a href="http://distance.mku.ac.ke/portal/" target="_blank" > E-Learning Portal </a>
+ </li>  <li class="ult-position ">  <a href="https://ibank.gtbank.co.ke/newapps/gtcollectportal/index.aspx" target="_blank" > MPesa Trans. Validation </a>
+ </li>  <li class="ult-position ">  <a href="http://studentemailreg.mku.ac.ke/" target="_blank" > Students Email </a>
+ </li>
+ </ul><!-- end: .secondary -->
+ </div><!-- end: #navigation -->
+{% endblock %}
+
+{% block content %}
+<div class="left_articles">
+    <div> <p>BIT/53642/2016 KAINGU STEPHEN TUMAINI  &nbsp;  &nbsp;  &nbsp;  &nbsp; Thika (Day) , Main Campus (Thika)</p></div>
+    <table border="1" align="center" cellspacing="0" cellpadding="0">
+        <FORM action="/umis/studentportal/personal_information.php" name="varsityProfileForm" enctype="multipart/form-data" method="post">
+            <tr> <td align="right" class="dentry_label"> <B> First / Baptism Name:</B> </td>  <td align="left">  &nbsp; STEPHEN</td> </tr>
+            <tr> <td align="right" class="dentry_label"> <B> Middle / Given Name:</B> </td>  <td align="left">  &nbsp; TUMAINI</td> </tr>
+            <tr> <td align="right" class="dentry_label"> <B> Last / Surname:</B> </td>  <td align="left">  &nbsp; KAINGU</td> </tr>
+        </FORM>
+    </table>
+</div>
+{% endblock %}
